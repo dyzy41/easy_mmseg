@@ -1,7 +1,7 @@
 # easy_mmseg
 everyone can use mmseg easiely.
 1. 项目介绍  
-mmsegmentation是一个非常好用的框架，但是代码很复杂，调试起来也很麻烦，不熟悉分割的同学可能用不好这个项目库，这对cv learner来说是个巨大的损失，因此我把mmsegmentation最关键的一些地方做了修改，方便同学们无脑使用  
+mmsegmentation是一个非常好用的框架，但是代码很复杂，调试起来也很麻烦，不熟悉分割的同学可能用不好这个项目库，这对cv learner来说是个巨大的损失，因此我把mmsegmentation最关键的一些地方做了修改，方便大家快速上手使用   
 2. 数据集使用方式  
 mmsegmentation里面的数据集模式主要是采用了一些常用的经典数据集的存储形式，比如VOC，city，isprs之类的。但是如果我们自己有一个数据集需要训练，重新整理数据就很麻烦，因此我把数据接口给修改了，改成了如下的格式  
 数据集导入方式就是三个文本文件，train.txt, val.txt, test.txt 里面的数据存储方式为：  
