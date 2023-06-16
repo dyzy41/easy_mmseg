@@ -5,8 +5,8 @@ mmsegmentation是一个非常好用的框架，但是代码很复杂，调试起
 2. 数据集使用方式  
 mmsegmentation里面的数据集模式主要是采用了一些常用的经典数据集的存储形式，比如VOC，city，isprs之类的。但是如果我们自己有一个数据集需要训练，重新整理数据就很麻烦，因此我把数据接口给修改了，改成了如下的格式  
 数据集导入方式就是三个文本文件，train.txt, val.txt, test.txt 里面的数据存储方式为：  
-img_path1&ensp;lab_path1  
-img_path2&ensp;lab_path2  
+img_path1&ensp;&ensp;lab_path1  
+img_path2&ensp;&ensp;lab_path2  
 ...  
 （注意这里中间是有两个空格）  
 这样做的好处就是，不管多乱七八糟的数据集，只要写一个代码生成这样的文件就可以开始训练了。我在tools/write_names.py里提供了一种写法。  
